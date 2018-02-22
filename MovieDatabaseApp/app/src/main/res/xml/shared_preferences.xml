@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="dummy"
+        android:title="dummy" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notifications"
+        android:title="@string/notifications" />
+
+    <ListPreference
+        android:defaultValue="@string/update_list_default"
+        android:entries="@array/update_list"
+        android:entryValues="@array/update_list"
+        android:key="updateFrequency"
+        android:title="@string/update" />
+
+    <ListPreference
+        android:entries="@array/network_list"
+        android:defaultValue="@string/network_list_default"
+        android:entryValues="@array/network_list"
+        android:key="networkType"
+        android:title="@string/network" />
+
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">YAMDA</string>
+    <string name="search_title" translatable="false">Search TMDb</string>
+    <string name="nowPlayingButton">Now Playing</string>
+    <string name="searchButton">Search</string>
+    <string name="upcomingMoviesButton">Upcoming</string>
+    <string name="mostPopularMoviesButton">Most Popular</string>
+    <string name="inputEditText">Search movies</string>
+    <string name="home">Home</string>
+    <string name="references">References</string>
+    <string name="ref">TMDB -> The Movie Database (TMDb) is a popular, user editable database for movies and TV shows.</string>
+    <string name="searchResults">Search Results</string>
+    <string name="moviesNowPlaying">Movies Now Playing</string>
+    <string name="upcomingMoviesList">Upcoming Movies</string>
+    <string name="mostPopularMoviesList">Most Popular Movies</string>
+    <string name="language">en-US</string>
+    <string name="github_nuno" translatable="false">https://github.com/Nunobpinto</string>
+    <string name="github_bruno" translatable="false">https://github.com/brunofilipe</string>
+    <string name="github_gameiro" translatable="false">https://github.com/JpmGameiro</string>
+    <string name="noResultsFound">No Results Found</string>
+    <string name="non_query">You did not enter a name for a movie</string>
+    <string name="errorInfo">Error Getting Information</string>
+    <string name="update">Update Frequency</string>
+    <string name="notifications">Notifications</string>
+    <string name="preferences">Preferences</string>
+    <string name="network">Choose Network Type</string>
+    <string name="rating" translatable="false">%.1f/10</string>
+    <string name="runtime" translatable="false">%dmin</string>
+    <string name="DateRange">From %s to %s</string>
+    <string name="notification_channel_name">Followed Movies</string>
+    <string name="notification_channel_description">Receive notifications reminding you when a movie is released</string>
+    <string name="errorLoadingFollowedMovie">Error loading followed movies</string>
+    <string name="movieFollowed">Movie followed!</string>
+    <string name="couldntfollowMovie">Couldn\'t follow the movie!</string>
+    <string name="movieUnfollowed">Movie Unfollowed!</string>
+    <string name="couldntUnfollowMovie">Couldn\'t unfollow movie!</string>
+
+    <string-array name="update_list">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="update_list_default">Daily</string>
+
+    <string-array name="network_list">
+        <item>Only Wi-fi</item>
+        <item>Only Mobile Network</item>
+        <item>Both</item>
+    </string-array>
+    <string name="network_list_default">Only Wi-fi</string>
+    <string name="follow">FOLLOW</string>
+    <string name="unfollow">UNFOLLOW</string>
+
+</resources>

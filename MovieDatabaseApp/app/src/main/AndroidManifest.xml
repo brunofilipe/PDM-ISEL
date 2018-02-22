@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pdm.isel.moviedatabaseapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MovieApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SearchableActivity"
+            android:parentActivityName=".ui.activity.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.HomeActivity" />
+            <!-- meta tag and intent filter go into results activity -->
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name=".ui.activity.MovieDetailsActivity" />
+        <activity android:name=".ui.activity.MovieListActivity" />
+        <activity android:name=".ui.activity.ReferencesActivity" />
+        <activity android:name=".ui.activity.PreferencesActivity"/>
+        <activity android:name=".ui.activity.HomeActivity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+
+        <service
+            android:name=".controller.services.NowPlayingJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".controller.services.UpComingJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="pdm.isel.moviedatabaseapp.data.content.MovieContentProvider"
+            android:authorities="pdm.isel.moviedatabaseapp"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false" />
+    </application>
+
+</manifest>

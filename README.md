@@ -1,2 +1,2 @@
 # PDM-ISEL
-Development of Android Application class
+Development of Mobile Application class 
